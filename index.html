@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="HTML, CSS & JS Quiz">
-        <title>Quiz App</title>
-        <link href="index.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>Young Thug Quiz</h1>    
-                <div class="question-and-score"></div>
-            </div>
-        </header>
-          
-  <!-- main page --> 
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="HTML, CSS & JS Quiz">
+  <title>Young Thug Quiz App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+</head>
 
-        <main>
-            <div>
-                <p>Young Thug</p>
-                <p>This quiz is to analyze your knowledge of the musical artist Young Thug.</p>
-            </div>
-            <div>
-                <button type="button" id="start">Start Quiz</button>
-            </div>
-        </main>
+<body>
+  <main role="main" class="container">
+    
+    <header role="banner" class="header">
+      <h1>Young Thug Quiz</h1>    
+    </header>
 
-<!-- Each question page -->
+    <section>
+      <ul class="scoreboard">
+        <li class="sizeMe">Question:
+          <span class="questionNumber">0</span>/5</li>
+        <li class="sizeMe">Score:
+          <span class="score">0</span>
+        </li>
+      </ul>
+    </section>
 
-        <main>
-            <section>
-                <form>
-                    <fieldset>
-                        <legend class="questionText"></legend>
-                        <label for="answer 1"></label>
-                        <label for="answer 2"></label>
-                        <label for="answer 3"></label>
-                        <label for="answer 4"></label>
-                    </fieldset>
-                </form>
-                <div>
-                    <button type="submit" id="submit">Submit</button>
-                </div>
-            </section>
-        </main>
+    <section role="region" class="jungleBox">
+      <section class="startQuiz box">
+        <h2>This quiz is to analyze your knowledge of the musical artist</h2>
+        <h2 class='thug'>Young Thug</h2>
+        <button type="button" class="startButton button">Start</button>
+      </section>
+      <section class="questionBox box altBox"></section>
+      <section class="response box altBox"></section>
+      <section class="final box altBox"></section>
+    </section>
+  </main>
 
-<!-- The final score page -->
-        <main>
-            <div>
-                <p>Young Thug</p>
-                <p>Your Score</p>
-            </div>
-            <div>
-                <button type="button" id="restart">Restart Quiz</button>
-            </div>
-        </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 
-    </body>
+</body>
 </html>
